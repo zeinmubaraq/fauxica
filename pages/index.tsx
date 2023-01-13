@@ -4,7 +4,10 @@ import { Poppins, Playfair_Display } from "@next/font/google";
 import styles from "../styles/Home.module.css";
 import Link from "next/link";
 
-const poppins = Poppins({ subsets: ["latin"], weight: ["400"] });
+const poppins = Poppins({
+  subsets: ["latin"],
+  weight: ["200", "400", "600", "700", "800"],
+});
 const playfair = Playfair_Display({ subsets: ["latin"] });
 
 export default function Home() {
@@ -50,16 +53,18 @@ export default function Home() {
 
         <main>
           <div className="left-col">
-            <h1>Quality apparel without the price tag</h1>
-            <p>
+            <h1 className={playfair.className}>
+              Quality apparel without the price tag
+            </h1>
+            <p className={`${poppins.className} subhead`}>
               No need to spend $xxx on apparel just for the names sake. Our
               premium apparel is made from the same stuff.
             </p>
             <div className="cta-btns">
-              <Link href="#" className="primary-cta">
+              <Link href="#" className={`${poppins.className} primary-cta`}>
                 Browse our collection
               </Link>
-              <Link href="#" className="secondary-cta">
+              <Link href="#" className={`${poppins.className} secondary-cta`}>
                 <span>Spring 23 Collection</span>
                 <svg viewBox="0 0 19 8" fill="none">
                   <path
@@ -71,8 +76,8 @@ export default function Home() {
             </div>
 
             <div className="news">
-              <p className="employees">50K</p>
-              <p className="details">
+              <p className={`${poppins.className} employees`}>50K</p>
+              <p className={`${poppins.className} details`}>
                 We&apos;re proud to announce that we now employ a workflorce of
                 over <strong>50,000</strong>. It&apos;s all possible because of
                 you.

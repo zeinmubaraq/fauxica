@@ -44,3 +44,91 @@ nav ul li a.active::before {
   border-bottom: 2px solid black;
   bottom: -6px;
 }
+
+main {
+  display: flex;
+  gap: 8em;
+  margin-top: 11em;
+}
+
+.left-col {
+  width: 45%;
+}
+
+.right-col {
+  flex-grow: 1;
+}
+
+h1 {
+  font-size: 5.2rem;
+  font-weight: normal;
+  margin: 0;
+}
+
+.subhead {
+  font-size: 1.8rem;
+}
+
+.cta-btns {
+  margin: 5em 0;
+}
+
+.cta-btns,
+.secondary-cta {
+  display: flex;
+  gap: 2em;
+}
+
+.primary-cta {
+  background-color: #f1e2d1;
+  font-size: 1.8rem;
+  font-weight: bold;
+  color: black;
+  text-decoration: none;
+  border-radius: 1.9em;
+  padding: 1em 2em;
+}
+
+.secondary-cta {
+  font-size: 1.8rem;
+  text-decoration: none;
+  color: black;
+  display: block;
+  padding: 1em 0;
+}
+
+.secondary-cta svg {
+  width: 20px;
+}
+
+.news {
+  display: flex;
+  gap: 3em;
+  padding: 5em;
+  border: 1px solid black;
+  border-radius: 0.8em;
+  position: relative;
+}
+
+.news::before {
+  position: absolute;
+  content: "";
+  background: url("/images/confetti.svg");
+  width: 100px;
+  height: 100px;
+  top: -20px;
+  left: -20px;
+  z-index: 2;
+}
+
+p.employees {
+  font-size: 3.3rem;
+  margin: 0;
+  font-weight: 200;
+  line-height: 100%;
+}
+
+p.details {
+  font-size: 1.4rem;
+  margin: 0;
+}
