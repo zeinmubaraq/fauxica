@@ -88,36 +88,45 @@ export default function Home() {
             <div className="card card1">
               <div className="card-details">
                 <div>
-                  <Link href="#" className="product-title">
+                  <Link
+                    href="#"
+                    className={`${poppins.className} product-title`}
+                  >
                     Fauxica Sport
                   </Link>
-                  <p>Running shoes</p>
+                  <p className={poppins.className}>Running shoes</p>
                 </div>
-                <p className="product-price">$49</p>
+                <p className={`${poppins.className} product-price`}>$49</p>
               </div>
             </div>
 
             <div className="card card2">
               <div className="card-details">
                 <div>
-                  <Link href="#" className="product-title">
+                  <Link
+                    href="#"
+                    className={`${poppins.className} product-title`}
+                  >
                     Fauxica Sport
                   </Link>
-                  <p>Running shoes</p>
+                  <p className={poppins.className}>Running shoes</p>
                 </div>
-                <p className="product-price">$49</p>
+                <p className={`${poppins.className} product-price`}>$49</p>
               </div>
             </div>
 
             <div className="card card3">
               <div className="card-details">
                 <div>
-                  <Link href="#" className="product-title">
+                  <Link
+                    href="#"
+                    className={`${poppins.className} product-title`}
+                  >
                     Fauxica Sport
                   </Link>
-                  <p>Running shoes</p>
+                  <p className={poppins.className}>Running shoes</p>
                 </div>
-                <p className="product-price">$49</p>
+                <p className={`${poppins.className} product-price`}>$49</p>
               </div>
             </div>
           </div>
