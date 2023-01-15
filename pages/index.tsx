@@ -20,6 +20,7 @@ export default function Home() {
         <link rel="icon" href="/favicon.ico" />
       </Head>
 
+      <div className="overlay"></div>
       <div className="wrapper">
         <header>
           <Link href="#">
